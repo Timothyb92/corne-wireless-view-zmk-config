@@ -45,13 +45,13 @@
 // -----------------------------------------------------------------------------------------
 // |       |  F1  |  F2  |   F3  |  F4   |     F5     |   |  F6   |  F7  |  F8  |  F9  |  F10  |          |
 // |       | Prev | Next | Vol - | Vol + | Play/Pause |   |       |  LFT | DWN  |  UP  |  RGT  |     ;    |
-// | SHFT  |  BT1 | BT2  |  BT3  |  BT4  |    BT5     |   |       |      |      |      |  GUI  | BT CLR   |
+// | SHFT  |  BT1 | BT2  |  BT3  |  BT4  |    BT5     |   | GLOBE |      |      |      |  GUI  | BT CLR   |
 //                    | ALT |     | SPC |                 | ENT |     | GUI |
                         label = "Raise";
                         bindings = <
    &trans     &kp F1        &kp F2       &kp F3       &kp F4       &kp F5          &kp F6   &kp F7   &kp F8 &kp F9    &kp F10 &trans
    &trans     &kp C_PREV    &kp C_NEXT   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP        &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI
-   &bt LSHFT &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &trans   &trans   &trans &trans    &kp LGUI &bt BT_CLR
+   &kp LSHFT &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp GLOBE   &trans   &trans &trans    &kp LGUI &bt BT_CLR
                     	     &kp RALT &trans   &kp SPACE   &kp RET   &trans    &kp LGUI
                         >;
                 };
